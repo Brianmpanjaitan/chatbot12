@@ -25,11 +25,11 @@ public class Games implements Domain
             }
             else if (statement.indexOf("hi") >= 0 || statement.indexOf("hello") >= 0)
             {
-                response = "sup bitch";
+                response = "whatsup my guy";
             }
             else if (statement.indexOf("how are you") >= 0)
             {
-                response = "Just fucking hoes nm, hbu?";
+                response = "Just chillin, hbu?";
             }
             else if (statement.indexOf("your name?") >= 0)
             {
@@ -39,9 +39,9 @@ public class Games implements Domain
             {
                 response = "Why did you ff@20.";
             }     
-            else if (statement.indexOf("feed") >= 0 || statement.indexOf("feeder") >= 0)
+            else if (statement.indexOf("feed") >= 0 || statement.indexOf("feeding") >= 0)
             {
-                response = "Why are you feeding?";
+                response = "Why are YOU feeding??";
             }
             else if (statement.indexOf("feeder") >= 0)
             {
@@ -55,7 +55,7 @@ public class Games implements Domain
             {
                 response = "EZ$";
             }
-            else if (statement.indexOf("dood") >= 0)
+            else if (statement.indexOf("dood") >= 0 || statement.indexOf("dude") >= 0)
             {
                 response = "Stop trolling";
             }
@@ -99,6 +99,7 @@ public class Games implements Domain
 		}
 		int position = findKeyword (statement, "I want to", 0);
 		String restOfStatement = statement.substring(position + 9).trim();
+		// Response
 		return "What does it mean to " + restOfStatement + "?";
 	}
 
@@ -118,6 +119,8 @@ public class Games implements Domain
 		int positionOfMe = findKeyword (statement, "me", positionOfYou + 3);
 		
 		String restOfStatement = statement.substring(positionOfYou + 3, positionOfMe).trim();
+		
+		// Response
 		return "What makes you think that I " + restOfStatement + " you?";
 	}
         
@@ -172,11 +175,11 @@ public class Games implements Domain
 		}
 		else if (whichResponse == 1)
 		{
-			response = "fucking";
+			response = "you're wasting my time";
 		}
 		else if (whichResponse == 2)
 		{
-			response = "fuck off";
+			response = "I don't really want to talk to you";
 		}
 		else if (whichResponse == 3)
 		{
@@ -184,7 +187,7 @@ public class Games implements Domain
 		}
                 else if (whichResponse == 4)
                 {
-                    response = "Chills.";
+                    response = "Chills..";
                 }
                 else if (whichResponse == 5)
                 {
